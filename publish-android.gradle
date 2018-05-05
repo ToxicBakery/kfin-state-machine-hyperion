@@ -79,7 +79,7 @@ afterEvaluate { project ->
     }
 
     signing {
-        required isTravis()
+        required false
         sign configurations.archives
     }
 
