@@ -1,2 +1,25 @@
-# kfin-state-machine-hyperion
-Hyperion plugin for quickly checking the state of registered kfin-state-machines
+# Kotlin Finite State Machine Hyperion [![Build Status](https://travis-ci.org/ToxicBakery/kfin-state-machine-hyperion.svg?branch=master)](https://travis-ci.org/ToxicBakery/kfin-state-machine-hyperion) [![codecov](https://codecov.io/gh/ToxicBakery/kfin-state-machine-hyperion/branch/master/graph/badge.svg)](https://codecov.io/gh/ToxicBakery/kfin-state-machine-hyperion)
+Hyperion Plugin for Monitoring Finate State Machines
+
+## Sample Usage
+```kotlin
+// Register for viewing
+KfinPlugin.registerMachine("MyMachine", myStateMachine)
+
+// Unregister from viewing
+KfinPlugin.unregisterMachine("MyMachine")
+```
+
+## Install
+```groovy
+debugImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion:1.+"
+releaseImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion-no-op:1.+"
+```
+
+## Build
+The library depends on gradle for compilation and requires JDK 8 or higher.
+
+```bash
+./gradlew build
+```
+

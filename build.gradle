@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    ext.hyperion_verion = '0.9.23'
+    ext.supportLibrary_version = '27.1.1'
+    ext.rxjava_version = '2.1.9'
+    ext.contraint_layout_version = '1.1.0'
+    ext.kfin_version = '2.0.113'
+    ext.dokka_version = '0.9.16'
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "https://plugins.gradle.org/m2/" }
+        google()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
+        classpath 'com.android.tools.build:gradle:3.1.2'
+    }
+}
+
+allprojects {
+    boolean isTag = !System.getenv('TRAVIS_TAG')?.isEmpty() ?: false
+    String buildNumber = System.getenv('TRAVIS_BUILD_NUMBER') ?: "0"
+
+    group 'com.ToxicBakery.kfinstatemachine.hyperion'
+    version "2.0.$buildNumber" + (isTag ? "" : "-SNAPSHOT")
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+}

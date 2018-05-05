@@ -1,0 +1,50 @@
+language: android
+
+android:
+  components:
+  - build-tools-27.0.3
+  - android-27
+
+install:
+- true
+
+env:
+  global:
+  - secure: "SG5ylbx/bjpxA51JMwXyO0TgW7aF0fN5QaMbGvUEl2pnHuIwq51UXMTc+BUOFM0hdgE2m8agDk9GSkHfEkujn5IImvBHJ7L8FSTBY/OSIQlivTe+qQ1i2s3kJHBpzNOHTJ99YDEnqpt3y4MJE/BQfulncffC354LsVk5ez6DerEZurgBel5sw5sHmwMbTxxDahdPlqvtrr7I3l0lKArH0rL0c0toEkPGD8gWDOIxmhM8iW1zt/6hdj/dqGOMAQl6oZZ+yFmP8EFonIe+ZhL4F0npfALhRwcKgiGl8M3wsUGfdHarCvqXVgA7qAVbPyO5l6+MyJAzRXiVXh0FXWdAqF6ATC7o+b26t8Z2uThdip2VznF/JjenB09VgYqfGzl1ff2jtFxDROtADx3taPDD/QGQApRtFGLiWs5lNjOUYC/gsSnTA5VIg3DObjJH2GcOPQ6G6OGumWQpUNLSrpgNQP1PxjSqSM02kB00qbnuz0GVM+hF7xvyd8Run5cCWUkG6gDaOLvzQwwe65ES9DqgC1FHT6RNKjCiOT/Dz+FWdaFW1Z/MMIvCDARyOVm4cALgGf3M1aTr1ynqHJbNX18PH3G9CtzpCak4M6p29XUr/Bb3+nKdDyw7eESHSsU3dMWltQpJbrNr5eSLRFUB0n4m5LER30QbnQIHtL/QVc86hR4="
+  - secure: "KSdEYoeRzyi86Bz4oDjLO5dOcA6rFB/Cx331SGo4dnFQic+/peuFOf7cUhEGp1nOAjkHcFA1u9bV2E1P6JTgoc4lh/ohPaF0/2Wq7dzA1njM6hOB+hVtNCRv/tRfycmamVuLrmuR8s8kBvCSD+5/kBbhn4JOY8C7jbhaP/v+fk8IkWCksD86jbI+suj+GJfI3D8RtJxRDuWCLq8lqyTZWFAN4uo7wKZI3nfsuplEpAlpozXsikMFmo77iWu8jTJwErzso4mCCpddFlkbTW4XFfZY+ndv5B/23VmGUM08B2lT6QEWXhIjmhmu6e5GRNGVfAKaAg1kWCjTn3LDq++Rff0MmlaeEz3VLvDmIwOR2npBnpBUUGBDp+orXLzloxG/0Xe73yEfNWuxWysQQfo0eF+G4JVizxXH3KtPaT1MjI8B4oRSic4OO7JGKlbS4b2uM3TmqXHlAXqVsGV/XwHK816LLy45qm0KxW5RRhiox8z8SUPFVyOTF7DjYCnGeJ0mp/GUq3+53jONMnawwpW7/8a78CDbbQtxQLIZccEWSKQlCgtlUMnN3bGShzVNND+7FrfRFakyQrkRe5BsuowctXgCbJOZtd0W3BuJotaCak88+EHFhBw8YkV0RUlyfBo9X5V/JOOp/4LnyoOgxa7E4q8xtG0V/AA0V/Kf3qiU+94="
+  - secure: "pDoZ+SALZOKK1LR5XfgA5DgSeNb/yJFY/cnc9/7uh6Zu7ZZKF5xHrfapqrdd7DW/vbY/hNVYE6XkE9j1jb0YaJN2Lqw+jXU8sU2goUrXke0sU1NbRBm4N+6VxCsH7tJLTc/lloXZoTP5NGlksTtLF5TamHm+wdARUmdbeh+MTPXnWZu8eeqWQtP8ZcMJmGX0dXABWmLm0ZXFVOJuU4zcgLMWgXq9O6d67wuYcb2OLgovbu0qexGuOOPgaw6+2inQho4drXxSGCc6FDQsIA+WUiUgYOpkfi+kKouPfTyIIWy+vJy3fLVowV4TxNXjPkxEIOvf2RTpqn2syp0/hXseVC6k/XdvNjnt7oaMo6lZONxbjmNkBoAXTdOazuA53sfj8zHq7VGtQaAlbzhoNEt9t0HIvB2YOOz0uoxc7+QPdDp8csWlWOMDj6ETnCBfSQm0+QHB31kV2hlhvPk5zkX2SVvtzQxMNTz/X7N3TRR35ewQ9VcAZKd0C/q7yQENjuTmPFYU4GLWDm2HAuBGnWDX5Vf/KNOqqaUcfD+H4+klVWnSziA7k/e6bIlHLG/hxeOtRjjz20F9Q7aDv0L7nUcmLv2l1q/6ZI7dSknLbLg7VwFAwMb+D2gbOtTGo46oQiOq4h39uUJyKeXCl8V4UtYgaSVK+QjKTfwxvjbrZ2CP4JM="
+  - secure: "OMZw8etJzyZayOCzZFeyhUtm7wZsQxW6zOJNr7mfLCaCWDYdLWcMqVtILMCJN7DK5VDc6nP0an7BkqEBy1pGepxJAYG/A2ATGJvRIv3G/VKUHIkXQX/cHk4uH1lk21y7sYoLxkZApQIw50Mxb3RSjshyjokUKLuqYaemfMkbnuswhVBq52724XPyfSC4nehIJQYvMFlVMRs7BYo/uLn5qJ4PBsmDoQWX5ZbAbFirvfuoDGCcHg8z5DhN6i9FpJurDv++KZy4/Xa0YCXjcOYjwF1+JvhGIVjKAUMoPetdBTDxNxarayb9LqOYPkc5CRaMaVt0HVgqRqwVdiv1leMvI6JOpk/TWJRCqRMPOO9N/oFAd2sQVLbcCdWPbSz8XnDuHhW7yn3dC5xue/q4Bw/wQasH5sm10CmymQrBOpFzz0eAcqps5FUNCvMxAqE7oPppVut1v8rv9zY0ATQdoCcTFIxghySlfA/EAl/uEiJAWaNbxoGMFD7eJFb8nWPeHS/hOyLvb8/0ImrUSFrxdqj2PFvYqbBot1Ic/ayv0qt3VkTOauabMeTnfch8cNDXADnYlNRKDNDhu/yX8cczhY0hk5rq0DqgKWrZ27mKNdBblAXSBNqGdAWyG4SpQtTfsGeGYvk78J5eIgBJaS3CoqAn4Cobq4nb+jWxAOLx8LK0itg="
+
+before_script:
+- chmod +x gradlew
+- echo "Travis branch is $TRAVIS_BRANCH"
+- echo "Travis branch is in pull request? $TRAVIS_PULL_REQUEST"
+- echo "Travis tag $TRAVIS_TAG"
+- echo "org.gradle.daemon=false" >> gradle.properties
+#- "docker pull $DOCKER_IMAGE"
+
+stages:
+  - name: compile
+  - name: deploy
+    if: tag IS present OR branch = master
+
+jobs:
+  include:
+    - stage: compile
+      script:
+#      - "docker run -it -v $PWD:/workspace $DOCKER_IMAGE /bin/sh -c \"cd /workspace && ./gradlew clean build\""
+      - ./gradlew clean build
+      - bash <(curl -s https://codecov.io/bash)
+    - stage: deploy
+      script:
+      - openssl aes-256-cbc -K $encrypted_129200c166dc_key -iv $encrypted_129200c166dc_iv
+         -in maven.keystore.gpg.enc -out maven.keystore.gpg -d
+      - echo -e "signing.keyId=${SIGNING_KEY}" >> "gradle.properties"
+      - echo -e "signing.password=${SIGNING_PASSWORD}" >> "gradle.properties"
+      - echo -e "signing.secretKeyRingFile=../maven.keystore.gpg" >> "gradle.properties"
+      - ./gradlew uploadArchives
+#      - echo -e "SONATYPE_USERNAME=${SONATYPE_USERNAME}" >> docker.env
+#      - echo -e "SONATYPE_PASSWORD=${SONATYPE_PASSWORD}" >> docker.env
+#      - echo -e "TRAVIS_TAG=${TRAVIS_TAG}" >> docker.env
+#      - echo -e "TRAVIS_BUILD_NUMBER=${TRAVIS_BUILD_NUMBER}" >> docker.env
+#      - "docker run -it --env-file docker.env -v $PWD:/workspace $DOCKER_IMAGE /bin/sh -c \"cd /workspace && ./gradlew uploadArchives\""
