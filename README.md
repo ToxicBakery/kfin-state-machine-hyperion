@@ -12,8 +12,8 @@ KfinPlugin.unregisterMachine("MyMachine")
 
 ## Install
 ```groovy
-debugImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion:1.+"
-releaseImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion-no-op:1.+"
+debugImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion:2.+"
+releaseImplementation "com.ToxicBakery.kfinstatemachine.hyperion:hyperion-no-op:2.+"
 ```
 
 ## Build
