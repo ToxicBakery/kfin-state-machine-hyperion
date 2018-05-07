@@ -12,6 +12,7 @@ import com.toxicbakery.androidstatemachines.ViewState.*
 import com.toxicbakery.kfinstatemachine.KfinPlugin
 import com.toxicbakery.kfinstatemachine.RxStateMachine
 import com.toxicbakery.kfinstatemachine.StateMachine
+import com.toxicbakery.kfinstatemachine.StateMachine.Companion.transition
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.disposables.Disposables
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         KfinPlugin.unregisterMachine(MACHINE_VIEW_STATE)
     }
 
-    private fun onNewState(state: ViewState) {
+    fun onNewState(state: ViewState) {
         when (state) {
             ViewState.DEFAULT -> constraintSetDefault.applyTo(rootView)
             ViewState.ALTERNATE -> constraintSetAlt.applyTo(rootView)
@@ -76,10 +77,12 @@ class MainActivity : AppCompatActivity() {
 
 class ViewStateMachine(
         initialState: ViewState
-) : StateMachine<ViewState>(
-        initialState,
-        transition(DEFAULT, Animate::class, ALTERNATE),
-        transition(ALTERNATE, Animate::class, DEFAULT)
+) : RxStateMachine<ViewState>(
+        StateMachine(
+                initialState,
+                transition(DEFAULT, Animate::class, ALTERNATE),
+                transition(ALTERNATE, Animate::class, DEFAULT)
+        )
 )
 
 sealed class ViewActions {

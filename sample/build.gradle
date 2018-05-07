@@ -24,6 +24,9 @@ android {
 }
 
 dependencies {
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+
     testImplementation 'junit:junit:4.12'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -32,7 +35,6 @@ dependencies {
 
     debugImplementation "com.willowtreeapps.hyperion:hyperion-core:$hyperion_verion"
     releaseImplementation "com.willowtreeapps.hyperion:hyperion-core-no-op:$hyperion_verion"
-    debugImplementation "com.willowtreeapps.hyperion:hyperion-measurement:$hyperion_verion"
     debugImplementation project(':hyperion')
     releaseImplementation project(':hyperion-no-op')
 
