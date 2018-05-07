@@ -1,5 +1,5 @@
 # Kotlin Finite State Machine Hyperion [![Build Status](https://travis-ci.org/ToxicBakery/kfin-state-machine-hyperion.svg?branch=master)](https://travis-ci.org/ToxicBakery/kfin-state-machine-hyperion) [![codecov](https://codecov.io/gh/ToxicBakery/kfin-state-machine-hyperion/branch/master/graph/badge.svg)](https://codecov.io/gh/ToxicBakery/kfin-state-machine-hyperion)
-Hyperion Plugin for Monitoring Finate State Machines
+Hyperion Plugin for Monitoring [Kotlin Finate State Machines](https://github.com/ToxicBakery/kfin-state-machine)
 
 ## Sample Usage
 ```kotlin
