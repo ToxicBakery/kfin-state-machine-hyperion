@@ -17,7 +17,7 @@ static String getRepositoryPassword() { return System.getenv('SONATYPE_PASSWORD'
 
 static String getBranchName() { return System.getenv('TRAVIS_BRANCH') }
 
-static boolean isRelease() { return isTag() && !isSnapshot() }
+boolean isRelease() { return isTag() && !isSnapshot() }
 
 afterEvaluate { project ->
 
