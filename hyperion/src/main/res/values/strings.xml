@@ -3,4 +3,5 @@
     <string name="kfin_app_name">kfin-state-machine</string>
     <string name="kfin_plugin_name">State Machines</string>
     <string name="kfin_plugin_subtitle">View states for registered state machines</string>
+    <string name="kfin_list_machine_label">%1$s (%2$s)</string>
 </resources>

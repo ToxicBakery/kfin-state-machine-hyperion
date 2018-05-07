@@ -6,8 +6,8 @@ import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.DividerItemDecoration.VERTICAL
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.toxicbakery.kfinstatemachine.KfinPlugin.Companion.registeredMachines
 import com.toxicbakery.kfinstatemachine.R
-import com.toxicbakery.kfinstatemachine.registeredMachines
 
 class StateMachineListActivity : AppCompatActivity() {
 

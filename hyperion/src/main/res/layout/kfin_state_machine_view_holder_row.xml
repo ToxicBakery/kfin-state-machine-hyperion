@@ -15,19 +15,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Id" />
-
-    <TextView
-        android:id="@+id/kfin_state_machine_holder_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kfin_state_machine_holder_id"
-        tools:text="State" />
+        tools:text="Id(State)" />
 
     <TextView
         android:id="@+id/kfin_state_machine_holder_transitions"
@@ -39,7 +27,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kfin_state_machine_holder_state"
-        tools:text="State" />
+        app:layout_constraintTop_toBottomOf="@+id/kfin_state_machine_holder_id"
+        tools:text="Available transitions" />
 
 </android.support.constraint.ConstraintLayout>

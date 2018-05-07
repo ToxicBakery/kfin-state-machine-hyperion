@@ -11,17 +11,19 @@ import com.toxicbakery.kfinstatemachine.R
 class StateMachineHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     private val textViewId: TextView by bind(R.id.kfin_state_machine_holder_id)
-    private val textViewState: TextView by bind(R.id.kfin_state_machine_holder_state)
-    private val textViewTransitons: TextView by bind(R.id.kfin_state_machine_holder_transitions)
+    private val textViewTransitions: TextView by bind(R.id.kfin_state_machine_holder_transitions)
 
     fun bind(
             id: String,
             state: Any,
             transitions: String
     ) {
-        textViewId.text = id
-        textViewState.text = state.toString()
-        textViewTransitons.text = transitions
+        textViewId.text = label(id, state)
+        textViewTransitions.text = transitions
     }
+
+    private fun label(id: String, state: Any) =
+            itemView.resources
+                    .getString(R.string.kfin_list_machine_label, id, state.toString())
 
 }
