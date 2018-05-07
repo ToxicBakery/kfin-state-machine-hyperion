@@ -1,9 +1,16 @@
 package com.toxicbakery.kfinstatemachine
 
+@Suppress("unused")
 class KfinPlugin {
 
-    fun registerMachine(id: String, machine: IStateMachine<*>) = Unit
+    companion object {
 
-    fun unregisterMachine(id: String) = Unit
+        fun registerMachine(id: String, machine: IStateMachine<*>) = Unit
+
+        fun unregisterMachine(id: String) = Unit
+
+        val registeredMachines: List<Pair<String, IStateMachine<*>>> = listOf()
+
+    }
 
 }
