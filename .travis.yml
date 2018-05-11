@@ -1,9 +1,10 @@
-language: android
+language: java
 
-android:
-  components:
-  - build-tools-27.0.3
-  - android-27
+jdk:
+- oraclejdk8
+
+install:
+- true
 
 install:
 - true
@@ -16,7 +17,13 @@ env:
   - secure: "OMZw8etJzyZayOCzZFeyhUtm7wZsQxW6zOJNr7mfLCaCWDYdLWcMqVtILMCJN7DK5VDc6nP0an7BkqEBy1pGepxJAYG/A2ATGJvRIv3G/VKUHIkXQX/cHk4uH1lk21y7sYoLxkZApQIw50Mxb3RSjshyjokUKLuqYaemfMkbnuswhVBq52724XPyfSC4nehIJQYvMFlVMRs7BYo/uLn5qJ4PBsmDoQWX5ZbAbFirvfuoDGCcHg8z5DhN6i9FpJurDv++KZy4/Xa0YCXjcOYjwF1+JvhGIVjKAUMoPetdBTDxNxarayb9LqOYPkc5CRaMaVt0HVgqRqwVdiv1leMvI6JOpk/TWJRCqRMPOO9N/oFAd2sQVLbcCdWPbSz8XnDuHhW7yn3dC5xue/q4Bw/wQasH5sm10CmymQrBOpFzz0eAcqps5FUNCvMxAqE7oPppVut1v8rv9zY0ATQdoCcTFIxghySlfA/EAl/uEiJAWaNbxoGMFD7eJFb8nWPeHS/hOyLvb8/0ImrUSFrxdqj2PFvYqbBot1Ic/ayv0qt3VkTOauabMeTnfch8cNDXADnYlNRKDNDhu/yX8cczhY0hk5rq0DqgKWrZ27mKNdBblAXSBNqGdAWyG4SpQtTfsGeGYvk78J5eIgBJaS3CoqAn4Cobq4nb+jWxAOLx8LK0itg="
 
 before_script:
-- chmod +x gradlew
+- wget -q -O android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+- mkdir android-sdk
+- unzip -qo android-sdk.zip -d android-sdk
+- chmod +x gradlew android-sdk/tools/android
+- mv licenses android-sdk/licenses
+- echo -e "org.gradle.daemon=false" >> gradle.properties
+- echo -e "sdk.dir=android-sdk" >> local.properties
 - echo "Travis branch is $TRAVIS_BRANCH"
 - echo "Travis branch is in pull request? $TRAVIS_PULL_REQUEST"
 - echo "Travis tag $TRAVIS_TAG"
