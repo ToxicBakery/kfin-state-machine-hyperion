@@ -8,7 +8,9 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.toxicbakery.kfinstatemachine.KfinPlugin.Companion.registeredMachines
 import com.toxicbakery.kfinstatemachine.R
+import com.willowtreeapps.hyperion.plugin.v1.HyperionIgnore
 
+@HyperionIgnore
 class StateMachineListActivity : AppCompatActivity() {
 
     private val recyclerView: RecyclerView by bind(R.id.kfin_recycler)
