@@ -25,7 +25,7 @@ allprojects {
     String buildNumber = System.getenv('TRAVIS_BUILD_NUMBER') ?: "0"
 
     group 'com.ToxicBakery.kfinstatemachine.hyperion'
-    version "2.0.$buildNumber" + (isTag ? "" : "-SNAPSHOT")
+    version "2.1.$buildNumber" + (isTag ? "" : "-SNAPSHOT")
 
     repositories {
         mavenCentral()
